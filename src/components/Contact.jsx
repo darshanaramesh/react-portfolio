@@ -26,9 +26,9 @@ const Contact = () => {
                 <span className="contact-icon">📍</span>
                 Tiruchengode, Namakkal
               </div>
-              <a href="https://reallygreatsite.com" target="_blank" rel="noreferrer" className="contact-link">
+              <a href="#Hero"className="contact-link">
                 <span className="contact-icon">🌐</span>
-                reallygreatsite.com
+                Portfolio
               </a>
             </div>
           </div>
