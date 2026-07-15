@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-import avatarImg from '../assets/avatar.png';
+import darshImg from '../assets/Darsh.jpeg';
 
 const Hero = () => {
   return (
@@ -12,7 +12,7 @@ const Hero = () => {
           <h1 className="hero-name">Darshana <span className="text-gradient">Ramesh</span></h1>
           <h2 className="hero-role">B.Tech Artificial Intelligence & Data Science</h2>
           <p className="hero-description">
-            Aspiring software developer with a strong passion for building modern web technologies, 
+            Aspiring software developer with a strong passion for building modern web technologies,
             practical applications, and leveraging machine learning for data-driven insights.
           </p>
           <div className="hero-actions">
@@ -20,10 +20,10 @@ const Hero = () => {
             <a href="#contact" className="btn btn-outline">Contact Me</a>
           </div>
         </div>
-        
+
         <div className="hero-image-wrapper animate-fade-in" style={{ animationDelay: '0.2s' }}>
           <div className="hero-image-border">
-            <img src={avatarImg} alt="Darshana R" className="hero-image" />
+            <img src={darshImg} alt="Darshana R" className="hero-image" />
           </div>
           <div className="floating-badge badge-1">AI Enthusiast</div>
           <div className="floating-badge badge-2">React Dev</div>

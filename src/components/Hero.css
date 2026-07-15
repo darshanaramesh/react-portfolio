@@ -55,23 +55,27 @@
 }
 
 .hero-image-border {
-  width: 400px;
-  height: 400px;
+  width: 340px;
+  height: 340px;
   border-radius: 50%;
   padding: 10px;
   background: var(--gradient-primary);
-  box-shadow: 0 0 40px rgba(139, 92, 246, 0.3);
+  border: 4px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 0 40px rgba(139, 92, 246, 0.25);
   position: relative;
   z-index: 2;
+  overflow: visible;
 }
 
 .hero-image {
-  width: 100%;
-  height: 100%;
+  position: relative;
+  width: 104%;
+  height: 104%;
+  top: -2%;
+  left: -2%;
   object-fit: cover;
   border-radius: 50%;
-  background: var(--bg-tertiary);
-  border: 4px solid var(--bg-primary);
+  border: none;
 }
 
 .floating-badge {

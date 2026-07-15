@@ -4,11 +4,20 @@ import './Navbar.css';
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
+      const sections = Array.from(document.querySelectorAll('section[id]'));
+      const currentSection = sections.find((section) => {
+        const rect = section.getBoundingClientRect();
+        return rect.top <= 120 && rect.bottom > 120;
+      });
+      setActiveSection(currentSection ? currentSection.id : 'home');
     };
+
+    handleScroll();
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -34,7 +43,7 @@ const Navbar = () => {
               key={link.name} 
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="nav-link"
+              className={`nav-link ${activeSection === link.href.replace('#', '') ? 'active' : ''}`}
             >
               {link.name}
             </a>
