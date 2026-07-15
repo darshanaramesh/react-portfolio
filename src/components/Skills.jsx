@@ -9,11 +9,11 @@ const Skills = () => {
     },
     {
       title: "Web Technologies",
-      skills: ["HTML", "CSS", "JavaScript", "React JS", "Node JS", "Bootstrap"]
+      skills: ["HTML", "CSS", "JavaScript", "React JS", "Bootstrap"]
     },
     {
       title: "Data & ML",
-      skills: ["SQL", "MongoDB", "Pandas", "Machine Learning"]
+      skills: ["SQL", "MongoDB","NumPy", "Pandas", "Machine Learning"]
     },
     {
       title: "Tools & Others",
